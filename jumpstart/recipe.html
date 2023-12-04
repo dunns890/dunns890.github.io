@@ -1,0 +1,117 @@
+<!-- Structure of my recipe app -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- browser tab with an icon and a title -->
+    <!-- changes title on browser tab -->
+    <title>LEARN's Bakery</title>
+
+    <!-- adds image to the browser tab -->
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSluyFIQN1TC2mHMMLYH9emuqvIl0e6wz50tA&usqp=CAU"/>
+  
+    <!-- connect to the css file -->
+    <link rel="stylesheet" href="dutchBaby.css"/>
+
+    <!-- font family links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- bouncing animation on class attribute -->
+  <body class="bounce">
+    <!-- headers are created with heading tags, opening and closing tags -->
+    <h1 id="top">LEARN's Lemon Blueberry Dutch Baby Recipe</h1>
+    
+    <!-- images are created with img tag, self closing tag -->
+    <!-- need src and alt attributes -->
+    <!-- <img src="https://images.unsplash.com/photo-1501262852236-faefb3dc67b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZHV0Y2glMjBiYWJ5JTIwcGFuY2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="pastry within a cast iron skillet with raspberries and powdered sugar"/> -->
+    
+    <!-- button that navigates to the recipe -->
+    <!-- to create navigation on a page, use anchor tag (a) with an href attribute, # symbol is for id-->
+    <a href="#recipe">
+      <button>Take me to the recipe</button>
+    </a>
+    
+    <!-- subheaders for backstory and recipe -->
+    <h2>Why Do We Bake?</h2>
+    
+    <!-- lorem ipsum: placeholder text. type lorem-->
+    <!-- p tag: creates a paragraph -->
+    <p class="paragraph">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut qui ab aliquam sunt nisi iure quasi assumenda perferendis nostrum, libero numquam voluptatibus sint at illo nemo praesentium eos? Alias, ex?
+    </p>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad omnis rerum quos enim saepe perspiciatis cupiditate nobis quae quas doloribus similique, impedit animi, ea iste qui laboriosam tenetur aliquid. Praesentium!</p>
+    <p class="paragraph">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde numquam asperiores hic dolor error. Rerum nisi eligendi enim quae autem veritatis debitis, facere ipsam suscipit rem. Expedita hic aperiam inventore culpa, sint sunt illo natus rem dolores corrupti dolore explicabo quasi? Libero eaque dignissimos maiores facere? Ab exercitationem facilis obcaecati voluptate harum nulla unde consectetur odio amet laboriosam laborum, aliquid, quaerat cum nisi eveniet dolorum ex iure! Nisi, possimus illum excepturi magni odit, delectus aliquid exercitationem, sequi repudiandae explicabo omnis fuga quod velit ducimus? Nam dolore facere, doloribus maxime ipsam modi soluta fuga hic commodi explicabo id praesentium nobis nemo dolorum, accusantium, odio mollitia corrupti quisquam omnis a? Neque, corrupti voluptatum necessitatibus, exercitationem quisquam quis repellendus, minima dignissimos explicabo placeat nam obcaecati? Aliquid, sint fugiat aspernatur temporibus quibusdam accusamus optio itaque animi? Nihil ipsa ex similique maxime quam placeat saepe vero eum, voluptates molestias aspernatur architecto facere deserunt excepturi accusantium facilis earum officia exercitationem aperiam voluptas numquam suscipit qui ea quis? Odit, quasi, impedit nostrum optio cupiditate eaque quas repellat consequuntur sed, dolor veniam accusantium id rerum accusamus et cumque error. Doloremque animi officia repellendus praesentium nemo possimus, eveniet itaque accusantium obcaecati, soluta similique quod at optio voluptatem, provident molestias?
+    </p>
+
+  <!-- id attribute named recipe that the anchor tag is referencing on the button below the image -->
+  <h2 id="recipe">Lemon Blueberry Dutch Baby Recipe</h2>
+  <h3>Ingredients</h3>
+
+  <!-- to create list using ordered list (ol), unordered list (ul), and line items (li) -->
+  <!-- unordered list will have line items as bullet points -->
+  <ul class="paragraph">
+    <li>flour</li>
+    <li>milk</li>
+    <li>eggs</li>
+    <li>butter</li>
+    <li>vanilla extract</li>
+    <li>lemon juice</li>
+    <li>blueberries</li>
+  </ul>
+  <h3>Instructions</h3>
+
+  <!-- ordered list will have line items as numbers -->
+  <ol class="paragraph">
+    <li>Heat oven to 425F</li>
+    <li>Mix all ingredients except for the butter</li>
+    <li>Melt the butter on the stove top</li>
+    <li>Place blueberries in cast iron skillet</li>
+    <li>Pour in mixture</li>
+    <li>Place in oven until puffed and golden brown for 20 minutes</li>
+  </ol>
+  <h2>Flavor Pairings</h2>
+
+  <!-- table for flavor pairing recommendations -->
+  <!-- create a table using table row (tr) to create rows and table data cell (td) to create columns -->
+  <table border="1" id="flavor">
+    <tr>
+      <td>Fruit</td>
+      <td>Spice</td>
+      <td>Sweetener</td>
+    </tr>
+    <tr>
+
+      <!-- function on javascript file, the function call is triggered by onclick attribute when user clicks on the table cell -->
+      <td id="peach" onclick="blueBerry('peach')">Peach</td>
+      <td>Nutmeg</td>
+      <td id="sugar" onclick="blueBerry('sugar')">Brown Sugar</td>
+    </tr>
+    <tr>
+      <td id="apple" onclick="blueBerry('apple')">Apple</td>
+      <td>Cinnamon</td>
+      <td>Caramel</td>
+    </tr>
+  </table>
+
+  <!-- footer with copyright and link to a different webpage -->
+  <footer>
+
+    <!-- to create copyright &copy -->
+    &copy LEARN Instructors and TAs | 
+
+    <!-- to allow link to open on a separate window, use target attribute -->
+    <a href="https://alexandracooks.com/2023/04/22/lemon-blueberry-dutch-baby/" target="_blank">Alexandra's Recipe</a> |
+
+    <!-- link back to the top of page -->
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <!-- connection to the javascript file -->
+  <script type="text/javascript" src="dutchBaby.js"> </script>
+</body>
+</html>

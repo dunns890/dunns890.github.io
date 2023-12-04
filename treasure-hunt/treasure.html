@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Treasure Hunt</title>
+
+    <link rel="icon" type="image/x-icon" href="https://classroomclipart.com/image/vector-clipart/pirate-treasure-chest-full-of-gold-coins-60582.htm"/>
+    <link rel="stylesheet" href="treasurehunt.css"/>
+
+   </head>
+   <body>
+    <h1>Super treasure hunt game</h1>
+    <h2>Trickiest treasure hunt game</h2>
+<ul>
+    <li>You have ten tries to choose the correct box</li>
+    <li>There are 16 boxes</li>
+    <li>If you click on the bomb you lose</li>
+    <li>If you click on the treasure you win</li>
+    </ul>
+    <img src="https://t3.ftcdn.net/jpg/03/54/90/84/240_F_354908454_7CftzSVA4ZldS4UrTsBzWLDLRSTyYZWW.jpg" alt="Treasure hunt picture" />
+    <table border="1">
+        <tr>
+          <td id="0" onclick="treasure(0)">?</td>
+          <td id="1" onclick="treasure(1)">?</td>
+          <td id="2" onclick="treasure(2)">?</td>
+          <td id="3" onclick="treasure(3)">?</td>
+
+        </tr>
+        <tr>
+          <td id="4" onclick="treasure(4)">?</td>
+          <td id="5" onclick="treasure(5)">?</td>
+          <td id="6" onclick="treasure(6)">?</td>
+          <td id="7" onclick="treasure(7)">?</td>
+
+          </tr>
+          <tr>
+          <td id="8" onclick="treasure(8)">?</td>
+          <td id="9" onclick="treasure(9)">?</td>
+          <td id="10" onclick="treasure(10)">?</td>
+          <td id="11" onclick="treasure(11)">?</td>
+
+          </tr>
+          <tr>
+          <td id="12" onclick="treasure(12)">?</td>
+          <td id="13" onclick="treasure(13)">?</td>
+          <td id="14" onclick="treasure(14)">?</td>
+          <td id="15" onclick="treasure(15)">?</td>
+
+          </tr>
+
+        <!--Add an onclick attribute to all the game board squares that calls the treasure function (on HTML). If this is done correctly, the alert should appear each time the user clicks on a square -->
+      <!--<td id="location" onclick="treasure('location')">?</td>
+      <td id="peach" onclick="blueBerry('peach')">Peach</td> -->
+
+      </table>
+    <button type="button">Restart the Game</button>
+
+    <footer>&copy; TJ Kord & Stacey | 
+
+        <!-- to allow link to open on a separate window, use target attribute -->
+        <a href="https://github.com/LEARNAcademy/jumpstart-student-notes/blob/main/code/html.md" target="HTML link"> HTML Treasure Hunt Page</a>
+    </footer>
+
+    <script type="text/javascript" src="treasurehunt.js"></script>
+</body>
+</html>

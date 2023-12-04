@@ -1,0 +1,122 @@
+/* Cascading Style Sheets (CSS) */
+  /* CSS is used to style html elements by using selectors and declarations to specify which elements to style and how to style them. */
+
+/* connect html and css files */
+  /* placed a link html tag with a rel and href attributes within the head tag of the html file */
+  /* <link rel="stylesheet" href="dutchBaby.css"/> */
+
+/* SELECTORS */
+  /* html tag - reference the name of the html tag on the html file */
+  /* id - communicates one time use, id attribute on html file, # on css file */
+  /* class - communicates multiple use, class attribute on html file, . on css file */
+
+/* DECLARATIONS */
+  /* written as property: value */
+  /* property - css keyword that specifies what property or quality you want to change on the selector */
+  /* value - specifies the exact change that you want to make */
+
+/* CSS SYNTAX */
+  /* selector {
+    property: value;
+    property: value;
+  }*/
+
+/* HTML TAG SELECTOR */
+/* image as the background */
+body {
+    background-image: url("https://images.unsplash.com/photo-1501262852236-faefb3dc67b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZHV0Y2glMjBiYWJ5JTIwcGFuY2FrZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* change the font of the headers */
+    /* https://fonts.google.com/ */
+    /* select the font family */
+    /* copy and paste the link onto the head tag of the html file */
+    /* copy and paste css rule onto css file */
+   
+    h1, h2, h3 {
+      font-family: 'Dancing Script', cursive;
+      color:antiquewhite;
+      background-color: rgb(55, 110, 77, 0.5);
+    }
+  
+    /* removing default settings on html elements */
+    ul, ol {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* centering the table */
+    table {
+      display: flex;
+      justify-content: center;
+    }
+  
+    /* USEFUL TOOLS */
+    /* CHROME ELEMENTS */
+    /* Use the chrome developer tool Elements to test out css styling */
+    /* Right click and inspect the page to access the Elements */
+    /* Move cursor to the section on the web page you want to style */
+    /* Right click and inspect the page */
+    /* Place declaration on the element.style{} */
+  
+    /* COLOR PICKER */
+    /* google search - color picker */
+    /* the values can be assigned to your declarations that pertain to color, such as the properties color or background-color */
+  
+  /* ID SELECTOR */
+  /* change background of table */
+  /* id attribute on html and # on css have the same name */
+  /* pseudo-class selector */
+    /* keyword that addresses the state of the selector based on the user interaction*/
+  #flavor:hover {
+    background-color: coral;
+  }
+  
+  /* CLASS SELECTOR */
+  /* add border and background to paragraphs */
+  .paragraph {
+    border-style: inset;
+    border-color: antiquewhite;
+    border-width: 3px;
+    background-color: antiquewhite;
+  }
+  
+  /* UNIVERSAL SELECTOR */
+  /* center all the text and table */
+  * {
+    text-align: center;
+  }
+  
+  /* ANIMATIONS */
+  /* add bouncing animation to the web page */
+  /* require animation properties and keyframes */
+  
+  /* animation properties - help assign the keyframes to a selector and define how it is animated */
+  
+  .bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+  }
+  /* keyframes - define what the animation looks like at each stage of the animation timeline. Each stage of the animation is represented as a percentage. Multiple percentages just need to be placed on separate lines. */
+  /* syntax */
+    /* @keyframes animationName {
+      percentage { declarations }
+      percentage { declarations }
+    } */
+  /* In CSS, the transform property is used to  modify the size, position, and orientation of an element,
+  translate value: Moves an element along the X and Y axes.  
+  scale value: Scales the size of an element along the X and Y axes.  */
+  @keyframes bounce {
+    0% { transform: scale(1,1) translateY(0) }
+    10% { transform: scale(1.1,.9) translateY(0) }
+    30% { transform: scale(.9,1.1) translateY(-100px) }
+    50% { transform: scale(1,1) translateY(0) }
+    100% { transform: scale(1,1) translateY(0) }
+  }
